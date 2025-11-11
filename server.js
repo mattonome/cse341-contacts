@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to my Express server with MongoDB!');
 });
 
-// Contacts routes nnn 
+// Contacts routes
 app.use('/contacts', require('./routes/contacts'));
 
 db.initDb((err) => {
